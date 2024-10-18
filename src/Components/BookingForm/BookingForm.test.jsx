@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import BookingPage from "./BookingPage";
 import { BrowserRouter } from "react-router-dom";
 import { fetchAPI, submitAPI } from "../../utils/sample-api";
+import BookingForm from "./BookingForm";
 
 describe("Form component", () => {
   test("Renders the form and submits user input", () => {
@@ -10,7 +10,7 @@ describe("Form component", () => {
     // Render the form
     render(
       <BrowserRouter>
-        <BookingPage />
+        <BookingForm />
       </BrowserRouter>
     );
 

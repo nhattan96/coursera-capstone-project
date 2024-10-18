@@ -11,7 +11,7 @@ import FooterSection from "./pages/HomePage/FooterSection/FooterSection";
 function App() {
   return (
     <MainContainer>
-      <BrowserRouter basename="/little-lemon">
+      <BrowserRouter>
         <Nav></Nav>
         <Routes>
           <Route element={<HomePage />} path="/" />

@@ -7,7 +7,7 @@ import theme from "../../../styles/theme";
 const HeroSection = () => (
   <HeroSectionStyles>
     <div className="flex-item content">
-      <h1>Little Lemon</h1>
+      <h1 data-testid="title-hero">Little Lemon</h1>
       <h2>Chicago</h2>
       <p>
         We are family owned Mediterranean restaurant, focused on traditional

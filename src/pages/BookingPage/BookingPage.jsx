@@ -73,6 +73,7 @@ const BookingPage = () => {
         <Input
           type="text"
           id="name"
+          data-testid="name"
           onChange={formik.handleChange}
           {...formik.getFieldProps("name")}
         />
@@ -85,6 +86,7 @@ const BookingPage = () => {
         <Input
           type="date"
           id="date"
+          data-testid="date"
           onChange={formik.handleChange}
           {...formik.getFieldProps("date")}
         />
@@ -96,6 +98,7 @@ const BookingPage = () => {
         <Select
           id="time"
           options={availableTimes}
+          data-testid="time"
           {...formik.getFieldProps("time")}
           onChange={formik.handleChange}
         ></Select>
@@ -107,6 +110,7 @@ const BookingPage = () => {
         <Input
           type="number"
           id="guests"
+          data-testid="guests"
           placeholder={0}
           {...formik.getFieldProps("guests")}
           onChange={formik.handleChange}
@@ -119,6 +123,7 @@ const BookingPage = () => {
         <Select
           id="occasion"
           options={occasionData}
+          data-testid="occasion"
           {...formik.getFieldProps("occasion")}
           onChange={formik.handleChange}
         ></Select>
